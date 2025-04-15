@@ -3,7 +3,7 @@ import Image from 'next/image'
 const services = [
   {
     title: 'Wedding Videography',
-    description: 'Capture your special day with cinematic storytelling that you'll cherish forever.',
+    description: 'Capture your special day with cinematic storytelling that you will cherish forever.',
     icon: '🎥',
   },
   {
