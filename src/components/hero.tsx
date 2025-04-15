@@ -1,33 +1,40 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const [videoError, setVideoError] = useState(false)
   
   useEffect(() => {
     // Ensure video plays automatically
     if (videoRef.current) {
       videoRef.current.play().catch(error => {
         console.error("Video play failed:", error)
+        setVideoError(true)
       })
     }
   }, [])
 
   return (
     <div className="relative h-screen flex items-center justify-center">
-      {/* Video background */}
+      {/* Video/Image background */}
       <div className="absolute inset-0 bg-black/50 z-10" />
       <div className="absolute inset-0 overflow-hidden">
-        <video
-          ref={videoRef}
-          src="/videos/0.mp4"
-          className="object-cover w-full h-full"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
+        {!videoError ? (
+          <video
+            ref={videoRef}
+            src="/videos/0.mp4"
+            className="object-cover w-full h-full"
+            autoPlay
+            muted
+            loop
+            playsInline
+            onError={() => setVideoError(true)}
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-b from-gray-900 to-black"></div>
+        )}
       </div>
       
       {/* Content */}
