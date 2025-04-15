@@ -1,17 +1,32 @@
-import Image from 'next/image'
+'use client'
+
+import { useEffect, useRef } from 'react'
 
 export function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+  
+  useEffect(() => {
+    // Ensure video plays automatically
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.error("Video play failed:", error)
+      })
+    }
+  }, [])
+
   return (
     <div className="relative h-screen flex items-center justify-center">
-      {/* Background image/video placeholder */}
+      {/* Video background */}
       <div className="absolute inset-0 bg-black/50 z-10" />
-      <div className="absolute inset-0">
-        <Image
-          src="/hero-bg.jpg"
-          alt="Videography background"
-          fill
-          className="object-cover"
-          priority
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          ref={videoRef}
+          src="/videos/0.mp4"
+          className="object-cover w-full h-full"
+          autoPlay
+          muted
+          loop
+          playsInline
         />
       </div>
       
@@ -26,7 +41,7 @@ export function Hero() {
         <div className="mt-10">
           <a
             href="#contact"
-            className="inline-block bg-white text-black px-8 py-3 rounded-md text-lg font-medium hover:bg-gray-100 transition-colors"
+            className="inline-block bg-white/10 backdrop-blur-sm text-white border border-white/30 px-8 py-3 rounded-md text-lg font-medium hover:bg-white/20 transition-colors"
           >
             Get Started
           </a>
