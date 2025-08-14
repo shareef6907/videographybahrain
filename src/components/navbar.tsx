@@ -14,7 +14,7 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="fixed w-full glass-dark z-50 border-b border-white/10">
+    <nav className="fixed w-full bg-black/30 z-50 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
@@ -70,7 +70,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden glass-dark border-t border-white/10">
+        <div className="md:hidden bg-black/50 border-t border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-2 sm:px-3">
             {navItems.map((item) => (
               <Link
