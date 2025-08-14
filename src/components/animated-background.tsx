@@ -21,9 +21,9 @@ export function AnimatedBackground() {
         <div className="orb orb-purple w-64 h-64 top-1/2 left-1/2" style={{ animationDelay: '15s' }} />
       </div>
 
-      {/* Animated Stars */}
+      {/* Animated Stars - Reduced count for performance */}
       <div className="stars">
-        {[...Array(50)].map((_, i) => (
+        {[...Array(25)].map((_, i) => (
           <div
             key={`star-${i}`}
             className="star"
@@ -31,22 +31,24 @@ export function AnimatedBackground() {
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${3 + Math.random() * 2}s`
+              animationDuration: `${3 + Math.random() * 2}s`,
+              willChange: 'opacity'
             }}
           />
         ))}
       </div>
 
-      {/* Floating Particles */}
+      {/* Floating Particles - Reduced count for performance */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(10)].map((_, i) => (
           <div
             key={`particle-${i}`}
             className="particle"
             style={{
               left: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 10}s`,
-              animationDuration: `${10 + Math.random() * 10}s`
+              animationDuration: `${15 + Math.random() * 10}s`,
+              willChange: 'transform'
             }}
           />
         ))}

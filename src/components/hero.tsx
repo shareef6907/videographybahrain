@@ -48,6 +48,8 @@ export function Hero() {
               playsInline
               muted
               loop
+              preload="auto"
+              poster="/videos/poster.jpg"
               onError={() => setVideoError(true)}
             />
           ) : (
