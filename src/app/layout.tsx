@@ -34,6 +34,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="preload" as="video" href="/videos/optimized.mp4" />
         <Script id="structured-data" type="application/ld+json">
           {`
             {

@@ -18,18 +18,32 @@ export function Hero() {
   }, [])
 
   useEffect(() => {
-    if (videoRef.current) {
-      // Attempt to play the video
-      const playPromise = videoRef.current.play();
-      
-      // Handle play promise (avoid uncaught promise errors)
-      if (playPromise !== undefined) {
-        playPromise.catch(error => {
-          console.error("Video play failed:", error)
-          setVideoError(true)
-        });
+    // Force immediate video playback
+    const playVideo = async () => {
+      if (videoRef.current) {
+        videoRef.current.load();
+        try {
+          await videoRef.current.play();
+        } catch (error) {
+          console.error("Video play failed:", error);
+          setVideoError(true);
+        }
       }
+    };
+    
+    // Play immediately when component mounts
+    playVideo();
+    
+    // Also try to play when video is ready
+    if (videoRef.current) {
+      videoRef.current.addEventListener('canplay', playVideo);
     }
+    
+    return () => {
+      if (videoRef.current) {
+        videoRef.current.removeEventListener('canplay', playVideo);
+      }
+    };
   }, []);
 
   return (
@@ -111,8 +125,8 @@ export function Hero() {
               : 'opacity-0 translate-y-10'
           }`}
         >
-          <div className="glass p-8 rounded-2xl border border-white/10 card-hover">
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+          <div className="glass p-8 rounded-2xl border border-white/10 card-hover bg-black/30 backdrop-blur-sm">
+            <p className="text-lg md:text-xl text-gray-300/90 leading-relaxed">
               Welcome to <span className="gradient-text font-bold">Bahrain Nights</span>, a Premier <span className="text-amber-400 font-semibold">Film Production Company in Bahrain</span> dedicated to transforming visions into <span className="text-amber-400 font-semibold">Cinematic Masterpieces</span>. Based in the heart of Bahrain, we specialize in delivering unparalleled <span className="text-purple-400 font-semibold">wedding videography</span>, <span className="text-yellow-400 font-semibold">corporate video production</span>, and <span className="text-green-400 font-semibold">documentary filmmaking</span> through cutting-edge technology and high-end filming equipment. Our state-of-the-art gear, including industry-leading cameras, lenses, and advanced stabilization systems, ensures every frame captures the essence of your story with stunning clarity and precision. At <span className="gradient-text font-bold">Bahrain Nights</span>, we blend <span className="text-green-400 font-semibold">Creativity</span> with <span className="text-red-400 font-semibold">Technical excellence</span> to produce films that <span className="text-purple-400 font-semibold">Resonate</span>, <span className="text-yellow-400 font-semibold">Inspire</span>, and leave a <span className="text-teal-400 font-semibold">Lasting Impact</span>. Let us illuminate your narrative under the stars of Bahrain's vibrant Nights.
             </p>
           </div>
