@@ -33,5 +33,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# large video files
-/public/videos/*.mp4 
+# large video files (commented out to allow optimized.mp4)
+# /public/videos/*.mp4 
