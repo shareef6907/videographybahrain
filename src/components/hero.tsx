@@ -18,32 +18,18 @@ export function Hero() {
   }, [])
 
   useEffect(() => {
-    // Force immediate video playback
-    const playVideo = async () => {
-      if (videoRef.current) {
-        videoRef.current.load();
-        try {
-          await videoRef.current.play();
-        } catch (error) {
-          console.error("Video play failed:", error);
-          setVideoError(true);
-        }
-      }
-    };
-    
-    // Play immediately when component mounts
-    playVideo();
-    
-    // Also try to play when video is ready
     if (videoRef.current) {
-      videoRef.current.addEventListener('canplay', playVideo);
-    }
-    
-    return () => {
-      if (videoRef.current) {
-        videoRef.current.removeEventListener('canplay', playVideo);
+      // Attempt to play the video
+      const playPromise = videoRef.current.play();
+      
+      // Handle play promise (avoid uncaught promise errors)
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.error("Video play failed:", error)
+          setVideoError(true)
+        });
       }
-    };
+    }
   }, []);
 
   return (
@@ -62,8 +48,6 @@ export function Hero() {
               playsInline
               muted
               loop
-              preload="auto"
-              poster="/videos/poster.jpg"
               onError={() => setVideoError(true)}
             />
           ) : (
