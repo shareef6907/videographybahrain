@@ -66,11 +66,27 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 text-center text-sm text-gray-500 border-t border-white/10">
+        {/* BahrainNights Link */}
+        <div className="mt-8 pt-8 text-center border-t border-white/10">
+          <p className="text-gray-400">
+            Discover events, venues & nightlife:{' '}
+            <a 
+              href="https://www.bahrainnights.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 transition-colors font-medium"
+            >
+              BahrainNights.com
+            </a>
+          </p>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-6 pt-6 text-center text-sm text-gray-500 border-t border-white/10">
           <p>&copy; {new Date().getFullYear()} Videography Bahrain. All rights reserved.</p>
           <p className="mt-2">Bahrain's Premier <span className="gradient-text font-semibold">Film Production Company</span> - Cinematic Storytelling</p>
         </div>
       </div>
     </footer>
   )
-} 
+}
