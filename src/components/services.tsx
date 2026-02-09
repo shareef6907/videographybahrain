@@ -69,6 +69,44 @@ export function Services() {
             </div>
           ))}
         </div>
+
+        {/* Cross-Promotion Section */}
+        <div className="mt-20 glass p-8 rounded-2xl border border-white/10">
+          <h3 className="text-2xl font-bold text-white text-center mb-4">Complete Your Project</h3>
+          <p className="text-gray-400 text-center mb-8">Our sister companies provide complementary services for your video production needs</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a 
+              href="https://www.eventsbahrain.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative glass p-6 rounded-xl border border-white/5 hover:border-orange-500/50 transition-all text-center"
+            >
+              <span className="text-3xl block mb-3">🎪</span>
+              <h4 className="text-lg font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">Event Equipment Rental</h4>
+              <p className="text-gray-400 text-sm">Need LED screens, sound, or lighting for your shoot? EventsBahrain.com has you covered.</p>
+            </a>
+            <a 
+              href="https://www.cinematicwebworks.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative glass p-6 rounded-xl border border-white/5 hover:border-amber-500/50 transition-all text-center"
+            >
+              <span className="text-3xl block mb-3">💻</span>
+              <h4 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Website for Your Videos</h4>
+              <p className="text-gray-400 text-sm">Showcase your content with a stunning website from CinematicWebWorks.com.</p>
+            </a>
+            <a 
+              href="https://www.bahrainnights.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative glass p-6 rounded-xl border border-white/5 hover:border-rose-500/50 transition-all text-center"
+            >
+              <span className="text-3xl block mb-3">🌙</span>
+              <h4 className="text-lg font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">Promote Your Brand</h4>
+              <p className="text-gray-400 text-sm">Get your business featured on BahrainNights.com, Bahrain's premier events guide.</p>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -66,19 +66,38 @@ export function Footer() {
           </div>
         </div>
 
-        {/* BahrainNights Link */}
-        <div className="mt-8 pt-8 text-center border-t border-white/10">
-          <p className="text-gray-400">
-            Discover events, venues & nightlife:{' '}
+        {/* Sister Companies */}
+        <div className="mt-8 pt-8 border-t border-white/10">
+          <p className="text-center text-sm text-gray-500 mb-4">Part of the Bahrain Nights family</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm">
             <a 
               href="https://www.bahrainnights.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-purple-400 hover:text-purple-300 transition-colors font-medium"
+              className="text-gray-400 hover:text-rose-400 transition-colors"
             >
-              BahrainNights.com
+              🌙 <span className="font-medium">BahrainNights.com</span>
+              <span className="block text-xs text-gray-500">Events & Nightlife Guide</span>
             </a>
-          </p>
+            <a 
+              href="https://www.eventsbahrain.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-orange-400 transition-colors"
+            >
+              🎪 <span className="font-medium">EventsBahrain.com</span>
+              <span className="block text-xs text-gray-500">Event Equipment Rental</span>
+            </a>
+            <a 
+              href="https://www.cinematicwebworks.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-amber-400 transition-colors"
+            >
+              💻 <span className="font-medium">CinematicWebWorks.com</span>
+              <span className="block text-xs text-gray-500">Premium Web Development</span>
+            </a>
+          </div>
         </div>
 
         {/* Copyright */}
