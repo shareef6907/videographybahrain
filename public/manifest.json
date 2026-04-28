@@ -1,0 +1,21 @@
+{
+  "name": "Videography Bahrain",
+  "short_name": "VPB",
+  "description": "Premium videography and filming services in Bahrain. Bahrain's leading film production company.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a14",
+  "theme_color": "#d4a853",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

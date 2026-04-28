@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: 'Videography Bahrain | Professional Film Production Services',
   description: 'Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain\'s leading film production company with cinematic storytelling.',
   keywords: 'filming in Bahrain, Bahrain videographer, wedding videography Bahrain, Bahrain film production, professional videographer Bahrain, corporate video production Bahrain, event videography Bahrain, cinematic wedding videography Bahrain, video production services Bahrain, drone videography Bahrain, luxury wedding videography Bahrain',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/manifest.json',
   openGraph: {
     title: 'Videography Bahrain | Professional Film Production Services',
     description: 'Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain\'s leading film production company.',
@@ -32,6 +40,8 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="1RhKzH3622b-WsojLWf4PSfP6mwv6ekjjNELWmL_aSU" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/logo.png" />
         <Script id="structured-data" type="application/ld+json">
