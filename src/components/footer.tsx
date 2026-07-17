@@ -97,6 +97,15 @@ export function Footer() {
               💻 <span className="font-medium">CinematicWebWorks.com</span>
               <span className="block text-xs text-gray-500">Premium Web Development</span>
             </a>
+            <a 
+              href="https://www.premieralive.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-red-400 transition-colors"
+            >
+              🎥 <span className="font-medium">Premiera Live</span>
+              <span className="block text-xs text-gray-500">Live Events & Entertainment</span>
+            </a>
           </div>
         </div>
 
