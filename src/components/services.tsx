@@ -49,9 +49,10 @@ export function Services() {
 
         <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <div
+            <a
               key={service.title}
-              className="group relative glass p-8 rounded-2xl border border-white/10 card-hover animate-scaleIn"
+              href={service.title === 'Wedding Videography' ? '/wedding-videography' : '#services'}
+              className="group relative glass p-8 rounded-2xl border border-white/10 card-hover animate-scaleIn hover:border-purple-500/30 transition-all"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -66,7 +67,7 @@ export function Services() {
                   {service.description}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
