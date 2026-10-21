@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Videography Bahrain | Professional Film Production Services',
     description: 'Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain\'s leading film production company.',
-    url: 'https://videographybahrain-avbasvrzj-shareef-alis-projects.vercel.app',
+    url: 'https://www.videographybahrain.com',
     siteName: 'Videography Bahrain',
     locale: 'en_US',
     type: 'website',
@@ -51,7 +51,7 @@ export default function RootLayout({
               "@type": "ProfessionalService",
               "name": "Videography Bahrain",
               "description": "Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain's leading film production company with cinematic storytelling.",
-              "url": "https://videographybahrain-avbasvrzj-shareef-alis-projects.vercel.app",
+              "url": "https://www.videographybahrain.com",
               "telephone": "+97339007750",
               "email": "shareef@eventsbahrain.com",
               "address": {
