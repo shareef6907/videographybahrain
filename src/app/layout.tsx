@@ -6,9 +6,13 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.videographybahrain.com'),
+  alternates: {
+    canonical: '/',
+  },
   title: 'Videography Bahrain | Professional Film Production Services',
-  description: 'Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain\'s leading film production company with cinematic storytelling.',
-  keywords: 'filming in Bahrain, Bahrain videographer, wedding videography Bahrain, Bahrain film production, professional videographer Bahrain, corporate video production Bahrain, event videography Bahrain, cinematic wedding videography Bahrain, video production services Bahrain, drone videography Bahrain, luxury wedding videography Bahrain',
+  description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
+  keywords: 'filming in Bahrain, Bahrain videographer, wedding videography Bahrain, Bahrain film production, professional videographer Bahrain, corporate video production Bahrain, event videography Bahrain, cinematic wedding videography Bahrain, video production services Bahrain, crane and gimbal cinematography Bahrain, luxury wedding videography Bahrain',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },
@@ -19,11 +23,25 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   openGraph: {
     title: 'Videography Bahrain | Professional Film Production Services',
-    description: 'Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain\'s leading film production company.',
-    url: 'https://videographybahrain-avbasvrzj-shareef-alis-projects.vercel.app',
+    description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
+    url: 'https://www.videographybahrain.com',
     siteName: 'Videography Bahrain',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Videography Bahrain | Professional Film Production Services',
+      },
+    ],
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Videography Bahrain | Professional Film Production Services',
+    description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
+    images: ['/og-image.jpg'],
   },
   verification: {
     google: '1RhKzH3622b-WsojLWf4PSfP6mwv6ekjjNELWmL_aSU'
@@ -102,8 +120,8 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Service",
-                  "name": "Drone Videography",
-                  "description": "Stunning aerial videography in Bahrain"
+                  "name": "Crane & Gimbal Cinematography",
+                  "description": "Sweeping crane, jib and stabilised gimbal camera work in Bahrain"
                 }
               ]
             }
