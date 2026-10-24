@@ -6,8 +6,12 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://videographybahrain.com'),
+  alternates: {
+    canonical: '/',
+  },
   title: 'Videography Bahrain | Professional Film Production Services',
-  description: 'Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain\'s leading film production company with cinematic storytelling.',
+  description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
   keywords: 'filming in Bahrain, Bahrain videographer, wedding videography Bahrain, Bahrain film production, professional videographer Bahrain, corporate video production Bahrain, event videography Bahrain, cinematic wedding videography Bahrain, video production services Bahrain, crane and gimbal cinematography Bahrain, luxury wedding videography Bahrain',
   icons: {
     icon: [
@@ -19,8 +23,8 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   openGraph: {
     title: 'Videography Bahrain | Professional Film Production Services',
-    description: 'Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain\'s leading film production company.',
-    url: 'https://videographybahrain-avbasvrzj-shareef-alis-projects.vercel.app',
+    description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
+    url: 'https://videographybahrain.com',
     siteName: 'Videography Bahrain',
     locale: 'en_US',
     type: 'website',
