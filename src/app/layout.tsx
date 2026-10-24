@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Videography Bahrain | Professional Film Production Services',
   description: 'Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain\'s leading film production company with cinematic storytelling.',
-  keywords: 'filming in Bahrain, Bahrain videographer, wedding videography Bahrain, Bahrain film production, professional videographer Bahrain, corporate video production Bahrain, event videography Bahrain, cinematic wedding videography Bahrain, video production services Bahrain, drone videography Bahrain, luxury wedding videography Bahrain',
+  keywords: 'filming in Bahrain, Bahrain videographer, wedding videography Bahrain, Bahrain film production, professional videographer Bahrain, corporate video production Bahrain, event videography Bahrain, cinematic wedding videography Bahrain, video production services Bahrain, crane and gimbal cinematography Bahrain, luxury wedding videography Bahrain',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },
@@ -102,8 +102,8 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Service",
-                  "name": "Drone Videography",
-                  "description": "Stunning aerial videography in Bahrain"
+                  "name": "Crane & Gimbal Cinematography",
+                  "description": "Sweeping crane, jib and stabilised gimbal camera work in Bahrain"
                 }
               ]
             }

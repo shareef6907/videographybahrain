@@ -59,7 +59,7 @@ export function Footer() {
                 <li className="hover:text-purple-400 transition-colors cursor-pointer">Professional Cinema Cameras</li>
                 <li className="hover:text-purple-400 transition-colors cursor-pointer">Premium Lenses & Lighting</li>
                 <li className="hover:text-purple-400 transition-colors cursor-pointer">Stabilization Systems</li>
-                <li className="hover:text-purple-400 transition-colors cursor-pointer">High-End Drone Equipment</li>
+                <li className="hover:text-purple-400 transition-colors cursor-pointer">Crane, Jib & Gimbal Rigs</li>
                 <li className="hover:text-purple-400 transition-colors cursor-pointer">Professional Audio Recording</li>
               </ul>
             </div>
