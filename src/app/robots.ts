@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://filmproductionbahrain.com/sitemap.xml',
+    sitemap: 'https://www.videographybahrain.com/sitemap.xml',
   };
 }

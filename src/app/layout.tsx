@@ -6,7 +6,7 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://videographybahrain.com'),
+  metadataBase: new URL('https://www.videographybahrain.com'),
   alternates: {
     canonical: '/',
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Videography Bahrain | Professional Film Production Services',
     description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
-    url: 'https://videographybahrain.com',
+    url: 'https://www.videographybahrain.com',
     siteName: 'Videography Bahrain',
     locale: 'en_US',
     type: 'website',
