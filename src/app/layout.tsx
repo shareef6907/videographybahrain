@@ -26,8 +26,22 @@ export const metadata: Metadata = {
     description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
     url: 'https://videographybahrain.com',
     siteName: 'Videography Bahrain',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Videography Bahrain | Professional Film Production Services',
+      },
+    ],
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Videography Bahrain | Professional Film Production Services',
+    description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
+    images: ['/og-image.jpg'],
   },
   verification: {
     google: '1RhKzH3622b-WsojLWf4PSfP6mwv6ekjjNELWmL_aSU'
