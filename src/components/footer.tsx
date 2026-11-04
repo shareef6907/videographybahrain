@@ -36,7 +36,9 @@ export function Footer() {
             <div className="glass p-6 rounded-xl border border-white/5">
               <h3 className="text-white font-semibold mb-4 text-lg">Our Services</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li className="hover:text-purple-400 transition-colors cursor-pointer">Wedding Videography</li>
+                <li className="hover:text-purple-400 transition-colors">
+                  <a href="/wedding-videography">Wedding Videography</a>
+                </li>
                 <li className="hover:text-purple-400 transition-colors cursor-pointer">Corporate Film Production</li>
                 <li className="hover:text-purple-400 transition-colors cursor-pointer">Event Video Coverage</li>
                 <li className="hover:text-purple-400 transition-colors cursor-pointer">Documentary Filmmaking</li>

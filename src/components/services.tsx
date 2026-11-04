@@ -1,10 +1,12 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const services = [
   {
     title: 'Wedding Videography',
     description: 'Cinematic wedding films capturing your special day in Bahrain with stunning storytelling that you will cherish forever.',
     icon: '🎥',
+    href: '/wedding-videography',
   },
   {
     title: 'Corporate Videos',
@@ -65,6 +67,15 @@ export function Services() {
                 <p className="text-gray-400 leading-relaxed">
                   {service.description}
                 </p>
+                {service.href && (
+                  <Link
+                    href={service.href}
+                    className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-purple-400 hover:text-purple-300 transition-colors"
+                  >
+                    {service.title} in Bahrain
+                    <span aria-hidden="true">&rarr;</span>
+                  </Link>
+                )}
               </div>
             </div>
           ))}
