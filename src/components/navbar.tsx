@@ -9,9 +9,10 @@ export function Navbar() {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Services', href: '#services' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Wedding Videography', href: '/wedding-videography' },
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'Contact', href: '/#contact' },
   ]
 
   return (
