@@ -7,8 +7,8 @@ export function Footer() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-6 md:mb-0">
-            <p className="text-2xl font-bold gradient-text mb-2">Bahrain Nights</p>
-            <p className="text-gray-400">CR 113587-1 | Manama, Kingdom of Bahrain</p>
+            <p className="text-2xl font-bold gradient-text mb-2">Premiera Live</p>
+            <p className="text-gray-400">Bahrain Nights Premiera Live · CR 113587-1 | Manama, Kingdom of Bahrain</p>
             <div className="mt-4 text-sm text-gray-500">
               <p>Professional Videography & Film Production Services</p>
               <p>Wedding Films | Corporate Videos | Event Coverage</p>
@@ -70,7 +70,7 @@ export function Footer() {
 
         {/* Sister Companies */}
         <div className="mt-8 pt-8 border-t border-white/10">
-          <p className="text-center text-sm text-gray-500 mb-4">Part of the Bahrain Nights family</p>
+          <p className="text-center text-sm text-gray-500 mb-4">Part of the Premiera Live family</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm">
             <a 
               href="https://www.bahrainnights.com" 
