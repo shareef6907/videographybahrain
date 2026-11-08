@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: 'Do you handle lighting and sound for the venue as well?',
-    a: 'Videography Bahrain is part of the Bahrain Nights family. Our sister company Events Bahrain handles event equipment rental, including LED screens, sound systems and lighting, so filming and venue production can be arranged through one team.',
+    a: 'Videography Bahrain is part of the Premiera Live family. Our sister company Events Bahrain handles event equipment rental, including LED screens, sound systems and lighting, so filming and venue production can be arranged through one team.',
   },
 ]
 
@@ -267,7 +267,7 @@ export default function WeddingVideographyPage() {
               >
                 Events Bahrain
               </a>{' '}
-              handles event equipment rental as part of the Bahrain Nights family.
+              handles event equipment rental as part of the Premiera Live family.
             </p>
           </div>
         </div>

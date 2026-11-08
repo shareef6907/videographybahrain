@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  title: 'Videography Bahrain | Professional Film Production Services',
+  title: 'Videography Bahrain by Premiera Live | Video Production',
   description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
   keywords: 'filming in Bahrain, Bahrain videographer, wedding videography Bahrain, Bahrain film production, professional videographer Bahrain, corporate video production Bahrain, event videography Bahrain, cinematic wedding videography Bahrain, video production services Bahrain, crane and gimbal cinematography Bahrain, luxury wedding videography Bahrain',
   icons: {
@@ -22,10 +22,10 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   openGraph: {
-    title: 'Videography Bahrain | Professional Film Production Services',
+    title: 'Videography Bahrain by Premiera Live | Video Production',
     description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
     url: 'https://www.videographybahrain.com',
-    siteName: 'Videography Bahrain',
+    siteName: 'Premiera Live',
     images: [
       {
         url: '/og-image.jpg',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Videography Bahrain | Professional Film Production Services',
+    title: 'Videography Bahrain by Premiera Live | Video Production',
     description: 'Professional videography and filming services in Bahrain for weddings, corporate events and commercial projects. Cinematic storytelling, local crew.',
     images: ['/og-image.jpg'],
   },
@@ -67,7 +67,9 @@ export default function RootLayout({
             {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "Videography Bahrain",
+              "name": "Premiera Live",
+              "legalName": "Bahrain Nights Premiera Live",
+              "alternateName": "Videography Bahrain",
               "description": "Premium videography and filming services in Bahrain for weddings, corporate events and commercial projects. Bahrain's leading film production company with cinematic storytelling.",
               "url": "https://www.videographybahrain.com",
               "telephone": "+97339007750",
