@@ -17,6 +17,7 @@ const services = [
     title: 'Event Coverage',
     description: 'Dynamic event videography in Bahrain covering conferences, concerts, and special events with professional quality.',
     icon: '🎬',
+    href: '/event-videography',
   },
   {
     title: 'TVC Advertisements',

@@ -11,6 +11,7 @@ export function Navbar() {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/#services' },
     { name: 'Wedding Videography', href: '/wedding-videography' },
+    { name: 'Event Videography', href: '/event-videography' },
     { name: 'Portfolio', href: '/#portfolio' },
     { name: 'Contact', href: '/#contact' },
   ]
