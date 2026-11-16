@@ -17,6 +17,12 @@
 .DS_Store
 *.pem
 
+# macOS AppleDouble resource-fork sidecars (files named "._<name>").
+# Created when a project is copied to or from a non-HFS filesystem. They are
+# binary forks of the real file, not source, and any that land in public/
+# are served verbatim as live 200 URLs. Never commit them.
+._*
+
 # debug
 npm-debug.log*
 yarn-debug.log*
