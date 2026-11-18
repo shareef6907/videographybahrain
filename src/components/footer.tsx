@@ -39,7 +39,9 @@ export function Footer() {
                 <li className="hover:text-purple-400 transition-colors">
                   <a href="/wedding-videography">Wedding Videography</a>
                 </li>
-                <li className="hover:text-purple-400 transition-colors cursor-pointer">Corporate Film Production</li>
+                <li className="hover:text-purple-400 transition-colors">
+                  <a href="/corporate-video">Corporate Film Production</a>
+                </li>
                 <li className="hover:text-purple-400 transition-colors">
                   <a href="/event-videography">Event Video Coverage</a>
                 </li>

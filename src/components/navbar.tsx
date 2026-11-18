@@ -12,6 +12,7 @@ export function Navbar() {
     { name: 'Services', href: '/#services' },
     { name: 'Wedding Videography', href: '/wedding-videography' },
     { name: 'Event Videography', href: '/event-videography' },
+    { name: 'Corporate Video', href: '/corporate-video' },
     { name: 'Portfolio', href: '/#portfolio' },
     { name: 'Contact', href: '/#contact' },
   ]

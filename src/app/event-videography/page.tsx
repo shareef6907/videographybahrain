@@ -176,8 +176,8 @@ export default function EventVideographyPage() {
             the event from the same footage: a highlights edit for internal channels, a longer cut
             for the full session, and shorter pieces for social. We also film
             {' '}
-            <Link href="/#services" className="text-purple-400 hover:text-purple-300 underline">
-              corporate video production
+            <Link href="/corporate-video" className="text-purple-400 hover:text-purple-300 underline">
+              corporate video production in Bahrain
             </Link>{' '}
             for the company film that sits alongside the event coverage, so the two share a look.
           </p>

@@ -12,6 +12,7 @@ const services = [
     title: 'Corporate Videos',
     description: 'Professional corporate video production to showcase your Bahrain business and engage your audience with compelling content.',
     icon: '💼',
+    href: '/corporate-video',
   },
   {
     title: 'Event Coverage',
