@@ -1,0 +1,7 @@
+# Treat macOS AppleDouble sidecars (files named "._<name>") as binary.
+# They are resource-fork stubs, not source. Marking them binary stops git
+# from mangling their bytes if they are ever staged again by accident.
+._* binary
+
+# Normalise text files in the repository.
+* text=auto
