@@ -217,14 +217,18 @@ export default function WeddingVideographyPage() {
             full-length record of the day, and a shorter highlight that carries the story of the
             wedding in a fraction of the running time. Our other services sit alongside this one
             when a project needs them, including{' '}
-            <Link href="/#services" className="text-purple-400 hover:text-purple-300 underline">
+            <Link href="/corporate-video" className="text-purple-400 hover:text-purple-300 underline">
               corporate video production
             </Link>
             ,{' '}
-            <Link href="/#portfolio" className="text-purple-400 hover:text-purple-300 underline">
+            <Link href="/event-videography" className="text-purple-400 hover:text-purple-300 underline">
               event coverage
             </Link>{' '}
-            and podcast filming.
+            and podcast filming. If you are still working out which service a project needs, the{' '}
+            <Link href="/videographer-in-bahrain" className="text-purple-400 hover:text-purple-300 underline">
+              videographer in Bahrain
+            </Link>{' '}
+            page explains what to ask before you book.
           </p>
 
           <h2 className="mt-14 text-3xl sm:text-4xl font-bold text-white">Wedding videography questions</h2>
