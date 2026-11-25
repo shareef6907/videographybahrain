@@ -49,6 +49,16 @@ export function Services() {
           <p className="mt-4 text-xl text-gray-400 max-w-3xl mx-auto">
             Professional videography services tailored to your needs by Bahrain's top videographers
           </p>
+          <p className="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">
+            Not sure which service fits your project? Read how to hire a{' '}
+            <Link
+              href="/videographer-in-bahrain"
+              className="text-purple-400 hover:text-purple-300 underline"
+            >
+              videographer in Bahrain
+            </Link>
+            , including what to ask before you book.
+          </p>
         </div>
 
         <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
